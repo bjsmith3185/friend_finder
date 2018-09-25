@@ -1,0 +1,21 @@
+FriendFinder
+    - .gitignore
+    - app
+      - data
+        - friends.js
+      - public
+        - home.html
+        - survey.html
+      - routing
+        - apiRoutes.js
+        - htmlRoutes.js
+    - node_modules
+    - package.json
+    - server.js
+
+
+---------------------------
+    server.js,  creates the server
+     - routing/htmlRoutes.js contains the 'path' statement and sends the res with correct html file.
+
+     
