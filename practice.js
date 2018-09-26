@@ -30,56 +30,123 @@ var myScore = [
     }
 ];
 
-var compareArray = [];
-
-
-// function compare(array, myarray) {
-
-for (var i = 0; i < friends.length; i++) {
-
-    console.log(friends[i].name);
-
-    var differenceArray = [];
-
-    for (var j = 0; j < friends[i].rating.length; j++) {
-        // console.log(friends[i].rating[j])
-        var delta = Math.abs(friends[i].rating[j] - myScore[0].rating[j])
-        // console.log(delta);
-  
-     
-
-   
-        differenceArray.push(delta);
- 
-
-
-    }
-
-    console.log(differenceArray.reduce(add, 0));
-    var temp = differenceArray.reduce(add, 0);
-    compareArray.push(temp);
-    // console.log(differenceArray);
-    console.log("----------------")
-
-};
-console.log("this is compare Array")
-console.log(compareArray);
-
-var min = Math.min.apply(Math, compareArray)
-
-console.log(min);  // this will tell the closest value to 0
-
-
-var a = compareArray.indexOf(min);
-
-console.log(a);  // this will tell the name postion in the array
-
-console.log(`The closest match for you is: ${friends[a].name}`);  // this shows your new friend
-
-
+// var compareArray = [];
 
 function add(a, b) {
     return parseFloat(a) + parseFloat(b);
 }
 
  
+function compare(friendArray, myScore) {
+    var compareArray = [];
+    for (var i = 0; i < friendArray.length; i++) {
+
+        // console.log(friendArray[i].name);
+    
+        var differenceArray = [];
+    
+        for (var j = 0; j < friendArray[i].rating.length; j++) {
+            // console.log(friendArray[i].rating[j])
+            var delta = Math.abs(friendArray[i].rating[j] - myScore[0].rating[j])
+            // console.log(delta);
+
+            differenceArray.push(delta);
+        }
+    
+        // console.log(differenceArray.reduce(add, 0));
+        var temp = differenceArray.reduce(add, 0);
+        compareArray.push(temp);
+        // console.log(differenceArray);
+        // console.log("----------------")
+    
+    };
+    // console.log("this is compare Array")
+    // console.log(compareArray);
+    
+    var min = Math.min.apply(Math, compareArray)
+    
+    // console.log(min);  // this will tell the closest value to 0
+    
+    var a = compareArray.indexOf(min);
+    
+    // console.log(a);  // this will tell the name postion in the array
+    
+    // console.log(`The closest match for you is: ${friendArray[a].name}`);  // this shows your new friend
+    var firstNameResult = friendArray[a].name
+
+    // console.log(firstNameResult);
+    var imageResult;
+
+    for (var b = 0; b < friends.length; b++) {
+        if(firstNameResult === friends[b].name) {
+            imageResult = friends[b].picture;
+        }
+    }
+
+    var bestFriend = {
+        name: firstNameResult,
+        picture: imageResult
+    }
+
+    console.log(` your new friend is ${firstNameResult} and their picture is
+    ${imageResult}
+    `)
+
+    return bestFriend;
+    
+}
+
+compare(friends, myScore);
+
+
+
+
+
+
+
+
+
+// for (var i = 0; i < friends.length; i++) {
+
+//     console.log(friends[i].name);
+
+//     var differenceArray = [];
+
+//     for (var j = 0; j < friends[i].rating.length; j++) {
+//         // console.log(friends[i].rating[j])
+//         var delta = Math.abs(friends[i].rating[j] - myScore[0].rating[j])
+//         // console.log(delta);
+  
+     
+
+   
+//         differenceArray.push(delta);
+ 
+
+
+//     }
+
+//     console.log(differenceArray.reduce(add, 0));
+//     var temp = differenceArray.reduce(add, 0);
+//     compareArray.push(temp);
+//     // console.log(differenceArray);
+//     console.log("----------------")
+
+// };
+// console.log("this is compare Array")
+// console.log(compareArray);
+
+// var min = Math.min.apply(Math, compareArray)
+
+// console.log(min);  // this will tell the closest value to 0
+
+
+// var a = compareArray.indexOf(min);
+
+// console.log(a);  // this will tell the name postion in the array
+
+// console.log(`The closest match for you is: ${friends[a].name}`);  // this shows your new friend
+
+
+
+    
