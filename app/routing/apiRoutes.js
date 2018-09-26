@@ -25,6 +25,9 @@ module.exports = function(app) {
         // console.log(newFriend);
         console.log(newFriend)
 
+        var yourName = newFriend.firstName;
+        console.log("this is your name: " + yourName);
+
         // logic from practice.js
 
     // return the best friend object here
@@ -64,6 +67,8 @@ function add(a, b) {
 
  
 function compare(friendArray, myScore) {
+    var yourName = myScore.firstName;
+    console.log(`this is my name!!!!!!!! ${yourName}`)
     var compareArray = [];
     for (var i = 0; i < friendArray.length; i++) {
 
@@ -112,7 +117,8 @@ function compare(friendArray, myScore) {
 
         var bestFriend = {
             name : firstNameResult,
-            picture : imageResult
+            picture : imageResult,
+            "yourName" : yourName,
         }
 
     return bestFriend;

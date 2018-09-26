@@ -37,6 +37,11 @@ function add(a, b) {
 }
 
  
+
+
+
+
+
 function compare(friendArray, myScore) {
     var compareArray = [];
     for (var i = 0; i < friendArray.length; i++) {

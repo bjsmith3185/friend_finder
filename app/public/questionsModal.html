@@ -166,7 +166,7 @@
           
         </div>
         <div class="modal-body">
-          <p>Congrats! Your new friend is....</p>
+          <p>Congrats <span id="users-name"></span>! Your new friend is....</p>
           <p id="friend-result"></p>
           <br>
           <img src="" id="friend-image" height="200" width="200">
@@ -203,15 +203,17 @@
                 // forcePoints: $("#force-points").val().trim()
             };
 
-            console.log(newFriend);
+            // console.log(newFriend);
 
             // Question: What does this code do??
             $.post("/api/questions", newFriend)
                 .then(function (data) {
-                    console.log(data.picture);
-                    // alert("Adding friend...");
+                    console.log(data.yourName);
+                    // console.log(data.yourName);
+                    alert("Adding friend...");
                     $("#friend-result").text(data.name);
                     $("#friend-image").attr("src",data.picture);
+                    $("#users-name").text(data.yourName);
                     // logic for modal with best frend info.
 
                 });
