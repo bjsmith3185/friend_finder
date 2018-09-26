@@ -1,31 +1,194 @@
 <!doctype html>
 <html>
+
 <head>
     <title>Friend Finder Questions</title>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous'>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css' integrity='sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
     <link rel='stylesheet' href=''>
 </head>
+
 <body>
 
     <h2>Friend Finder Questions</h2>
 
     <form action="">
-      First name:<br>
-      <input type="text" name="firstname" >
-      <br>
-      Last name:<br>
-      <input type="text" name="lastname" >
-      <br><br>
-      <input type="submit" value="Submit">
-    </form> 
+        <!-- First Name:<br> -->
+        <label for="firstname">First Name</label><br>
+        <input type="text" name="firstname" id="firstName">
+        <br>
+        <!-- Last Name:<br> -->
+        <label for="lastname">Last Name</label><br>
+        <input type="text" name="lastname" id="lastName">
+        <br>
+        <!-- Picture (upload):<br> -->
+        <label for="picture">Picture (upload)</label><br>
+        <input type="text" name="picture" id="picture">
+        <br><br>
+        <!-- <input type="submit" value="Submit"> -->
+
+        <div class="form-group">
+            <label for="question-1">Are you on time?</label><br>
+            <select class="dropdown" id="question-1">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agreed)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="question-2">Do you like to sleep?</label><br>
+            <select class="dropdown" id="question-2">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agreed)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="question-3">Are you good at CSS?</label><br>
+            <select class="dropdown" id="question-3">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agreed)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="question-4">Do you like chicken wings?</label><br>
+            <select class="dropdown" id="question-4">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agreed)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="question-5">Do you smoke or chew?</label><br>
+            <select class="dropdown" id="question-5">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agreed)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="question-6">Are you athletic?</label><br>
+            <select class="dropdown" id="question-6">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agreed)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="question-7">Do you drive fast?</label><br>
+            <select class="dropdown" id="question-7">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agreed)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="question-8">Do you sell drugs?</label><br>
+            <select class="dropdown" id="question-8">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agreed)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="question-9">Do you like cats?</label><br>
+            <select class="dropdown" id="question-9">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agreed)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="question-10">Are you rich?</label><br>
+            <select class="dropdown" id="question-10">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agreed)</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <input type="submit" value="Submit" id="submit">
+
+
+    </form>
+
+
+
+    <script type="text/javascript">
+        // Question: What does this code do?
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+            var newFriend = {
+                firstName: $("#firstName").val().trim(),
+                LastName: $("#lastName").val().trim(),
+                picture: $("#picture").val().trim(),
+                data: [
+                    $("#question-1").val(),
+                    $("#question-2").val(),
+                    $("#question-3").val(),
+                    $("#question-4").val(),
+                    $("#question-5").val(),
+                    $("#question-6").val(),
+                    $("#question-7").val(),
+                    $("#question-8").val(),
+                    $("#question-9").val(),
+                    $("#question-10").val(), 
+                ],
+                // forcePoints: $("#force-points").val().trim()
+            };
+
+            console.log(newFriend);
+
+            // Question: What does this code do??
+            $.post("/api/friends", newFriend)
+                .then(function (data) {
+                    console.log("add.html", data);
+                    alert("Adding friend...");
+                });
+        });
+    </script>
 
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
     <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script type='text/javascript' src=''></script>
 </body>
+
 </html>
