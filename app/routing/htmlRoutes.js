@@ -3,7 +3,8 @@ var friends = require("../data/friends.js");
 
 module.exports = function(app) {
     app.get("/questions", function(req, res) {
-        res.sendFile(path.join(__dirname + "/../public/questionsModal.html"))
+        res.sendFile(path.join(__dirname + "/../public/question.html"))
+        // res.sendFile(path.join(__dirname + "/../public/questions_practice.html"))
     })
 
     app.get("/" , function(req, res) {
