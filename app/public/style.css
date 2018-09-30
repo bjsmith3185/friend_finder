@@ -1,0 +1,124 @@
+
+.title {
+    font-size: 45px;
+    color: orange;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.info {
+    font-weight: 400px;
+    color: black;
+    margin-bottom: 10px;
+
+
+}
+
+.footer-area {
+    height: 50px;
+    width: 100%;
+    position: fixed; 
+    left: 0;
+    bottom: 0;
+    background: lightgray;
+    padding: 18px;
+   
+}
+
+.footer-link {
+    font-size: 12px;
+    color: blue;
+
+}
+
+
+/* quesiton page */
+
+.question-title {
+    color: orange;
+    font-weight: bolder;
+}
+
+.question-box {
+    margin-left: 100px;
+    width: 400px;
+    padding: 20px;
+    background: lightgrey;
+    border: 2px solid gray;
+}
+
+
+#help-image {
+    border: 2px solid black;
+    height: 220px;
+    width: 600px;
+    z-index: 22;
+    background: white;
+    padding: 20px
+
+}
+
+.instructions {
+    color: black;
+    font-size: 18px;
+    margin-left: 20px;
+    text-decoration: underline;
+    
+}
+
+.links {
+    margin-top: 10px;
+    color: blue;
+    font-size: 12px;
+}
+
+#close {
+    margin-top: 20px;
+    color: red;
+    font-size: 18px;
+
+}
+
+
+.form-group {
+    background: whitesmoke;
+    height: 130px;
+    width: 350;
+    margin-top: 15px;
+    padding-left: 20px;
+    padding-top: 10px;
+
+}
+
+.question-number {
+    font-size: 20px;
+    color: orange;
+    font-weight: bold;
+}
+
+/* friends page */
+
+.friend-area {
+    border: 5px solid black;
+    background: lightgrey;
+    padding: 10px;
+    margin: 25px;
+    width: 600px;
+    height: 600px;
+
+}
+
+.list-name {
+    font-size: 25px;
+    font-weight: bolder;
+    color: orange;
+    margin-bottom: 10px;
+
+}
+
+.list-image {
+    width: 400px;
+    height: 400px;
+    border: 2px solid orange;
+   
+}

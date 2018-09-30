@@ -1,3 +1,20 @@
+9/29 todo
+
+
+- erase the info entered when submitting
+- close modal takes to home screen
+- require the inputs to be completed
+
+
+
+
+- deploy to heroku
+
+
+
+
+-------------------------------------
+
 FriendFinder
     - .gitignore
     - app
